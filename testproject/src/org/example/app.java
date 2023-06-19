@@ -17,7 +17,7 @@ public class App {
     App()
     {
         Location userLocation = new Location("000",50,67);
-        this.user = new User("Sudhanshu Kumar",userLocation);
+        this.user = new User("garima saha",userLocation);
     }
 
     public User getUser() {
@@ -59,7 +59,7 @@ public class App {
 
     }
     public void parseLocationData() throws IOException{
-        BufferedReader locationData=Files.newBufferedReader(Paths.get("C:\\Users\\sudhanshu\\IdeaProjects\\shardaswiggy\\data\\location.csv"));
+        BufferedReader locationData=Files.newBufferedReader(Paths.get("C:\\Users\\garima saha\\IdeaProject\\testproject\\out\\production\\testproject\\location.csv"));
         String lines=null;
         for(int locationcnt=0;(lines=locationData.readLine())!=null;locationcnt++){
             String[] data = lines.split(",");
