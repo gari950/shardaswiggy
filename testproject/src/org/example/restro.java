@@ -1,12 +1,13 @@
 package org.example;
 
-public class restro {
+public class Restro {
     String restroID;
     String restroName;
     String restroAddress;
+    Location location;
     Dish[] menu=new Dish[3];
 
-    restro(String id, String name, String addr){
+    Restro(String id, String name, String addr){
         this.restroID=id;
         this.restroName=name;
         this.restroAddress=addr;
@@ -15,6 +16,10 @@ public class restro {
 
     public void setMenu(Dish[] menu) {
         this.menu = menu;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
     }
 
     public String getRestroID() {
@@ -31,5 +36,9 @@ public class restro {
 
     public String getRestroAddress() {
         return restroAddress;
+    }
+
+    public Location getLocation() {
+        return location;
     }
 }
