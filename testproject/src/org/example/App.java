@@ -25,7 +25,7 @@ public class App {
     }
 
     public void parseRestroData() throws IOException{
-        BufferedReader restroData=Files.newBufferedReader(Paths.get("C:\\Users\\garima saha\\testproject\\out\\production\\testproject\\name.cs"));
+        BufferedReader restroData=Files.newBufferedReader(Paths.get("C:\\Users\\garima saha\\testproject\\out\\production\\testproject\\name.csv"));
         String lines=null;
         for(int restcnt=0;(lines=restroData.readLine())!=null;restcnt++){
             String[] data=lines.split(",");
@@ -146,7 +146,7 @@ public class App {
         swiggyApp.parseRestroData();
         System.out.println("**********************************************************************");
         System.out.println("Hey " +swiggyApp.getUser().getUserName()+" Welcome to our Swiggy App ");
-        System.out.println("How would you like to Order ? 1 - From the Menu "); //| 2 - Search for Dish"
+        System.out.println("Press 0 for displaying menu, 1 for searching the menu, 2 for exit");
         Scanner sc=new Scanner(System.in);
         int choice=sc.nextInt();
         if(choice==1){
