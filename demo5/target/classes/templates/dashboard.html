@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>CBT Dashboard</title>
+</head>
+<body>
+<h1> CBT Dashboard</h1>
+<form action="dashboard" method="post"></form>
+<table>
+    <label><tr><td><b>First Name:</b></td><span th:text="${userdetail.fname}"></span></tr></label>
+    <tr><td><b>Last Name:</b></td><span th:text="${userdetail.lname}"></span></tr>
+    <tr><td><b>Email:</b></td><span th:text="${userdetail.email}"></span></tr>
+    <tr><td><b>Phone:</b></td><span th:text="${userdetail.phone}"></span></tr>
+</table>
+</form>
+</body>
+</html>
